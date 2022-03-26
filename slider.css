@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.slider-container{
+    width: 800px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
+    padding-bottom: 50px;
+    background-color: #abb7c4;
+    border-radius: 5px;
+
+    /* Bu kısmı Sil */
+    margin: 200px auto;
+    /* Bu kısmı Sil */
+}
+.slider-container .slider{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+.slider-container .slider .slider-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    position: relative;
+    right : 0px;
+    transition: .8s all linear;
+}
+.slider-container .slider .slider-item a{
+    width: 20%;
+    max-height: 200px;
+    border-radius: 20px;
+}
+.slider-container .slider .slider-item a img{
+    width: 100%;
+    max-height:200px ;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.slider-container .slider .slider-item a img:hover{
+    filter: brightness(1.2);
+    box-shadow: 0 0 12px rgb(0, 34, 255);
+}
+#ileri , #geri{
+    position: absolute;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 10px;
+    padding:30px 2px;
+    background-color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .2;
+    height: 50%;
+    border: none;
+}
+#ileri{
+    right: 6px;
+}
+#geri{
+    left: 6px ;
+}
+#ileri:hover , #geri:hover{
+    opacity: .7;
+}
+.slider-circle{
+    width: 200px;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+.slider-circle span{
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: #99aec5;
+    transition: .8s cubic-bezier(0, 1.08, 1, 0.98);
+}
