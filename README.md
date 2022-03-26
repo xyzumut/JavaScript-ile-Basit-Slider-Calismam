@@ -1,0 +1,1 @@
+# JavaScript-ile-Basit-Slider-Calismam
